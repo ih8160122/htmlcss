@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a태그</title>
+    <style>
+      a {
+        display: block;
+      }
+      /* 방문하지 않은 링크 */
+      a:link {
+        color: fuchsia;
+        text-decoration: none;
+      }
+      /* 방문한 링크 */
+      a:visited {
+        color: darkblue;
+      }
+      /* 마우스를 올린 링크 */
+      a:hover {
+        color: black;
+        text-decoration: underline;
+      }
+      /*마우스를 누르고 있는 링크 */
+      a:active {
+        color: darkorange;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://www.naver.com" target="_blank">링크태그1</a>
+    <a href="https://www.google.com" target="_new"> 구글</a>
+    <p>↓ 타겟 속성 없앤 경우 a태그는 인라인</p>
+    <a href="https://www.google.com"> 구글</a>
+
+    <p></p>
+    <p>target - 현재 창에 링크</p>
+    <p>_blank - 한탭에서 새창으로</p>
+    <p>_new - 많이 쓰는 태그 얘는 탭에서 새창? 인듯</p>
+
+    <a href="./images/photo1.jpg">이미지</a>
+    <a href="images/photo2.jpg">이미지2</a>
+    <a href="../htmlcss-2/images/photo3.jpg">이미지3 </a>
+    <a
+      href="https://t1.daumcdn.net/daumtop_deco/images/pctop/2023/logo_daum.png"
+      >다음</a
+    >
+
+    <p>css</p>
+    <p>style은 head 태그에 씀</p>
+  </body>
+</html>
