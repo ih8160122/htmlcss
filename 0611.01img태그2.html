@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>img 태그</title>
+    <style>
+      a.link1 {color: aqua;}
+      a.link1 {color: rgb(255, 8, 0);}
+      a.link1 {color: rgb(6, 255, 39);}
+      .p01 {
+        width: 500px; !important;
+      }
+      #pp01 {
+        width: 300px;
+      }
+      /* 아이디 태그를 우선 순위로 */
+
+      .p02 {
+        width: 400px;
+      }
+      .p03 {
+        width: 600px;
+      }
+      .p04 {
+        width: 800px;
+      }
+      .p05 {
+        width: 500px;
+      }
+      .p06 {
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>이미지 파일</h2>
+    <p>
+      이미지 파일은 인라인 태그 class는 중복 되는데 id는 중복안됨 <br />=같은
+      형식 둘이 같이 사용할 수 있음
+    </p>
+
+    <p class="link1">문단태그</p>
+    <p class="link2">문단태그</p>
+    <p class="link3">문단태그</p>
+
+    <a href="#" class="link1">link1</a>
+    <a href="#" class="link2">link2</a>
+    <a href="#" class="link3">link3</a>
+
+    <p class="p01" id="photo1">문단태그</p>
+    <img
+      src="./images/photo1.jpg"
+      alt="photo"
+      class="p01"
+      id="pp01"
+      style="width: 500px"
+    />
+    <img src="./images/photo2.jpg" alt="photo" class="p02" />
+    <img src="./images/photo3.jpg" alt="photo" class="p03" />
+    <img src="./images/photo4.jpg" alt="photo" class="p04" />
+    <img src="./images/photo5.jpg" alt="photo" class="p05" />
+    <img src="./images/photo6.jpg" alt="photo" class="p06" />
+    <a href="https://www.naver.com/" target="_blank">
+      <img src="./images/cake.jpg" alt="cake"
+    /></a>
+    
+    <img src="./images/map.jpg" alt="지도" usemap="#korea"/>
+    <map name="korea">
+    <area
+      shape="rect"
+      coords="166,276,164,270"
+      href="https://www.daejeon.go.kr/"
+      alt="대전" target="_new"
+    />
+    <area shape="circle" coords= 92,522,30" href="https://www.jejusi.go.kr/" alt="제주도" target="_blank">
+    <area shape="poly" coords="300,290,325,304,342,303" href="https://www.pohang.go.kr/main.do" alt="포하항" target="_blank">
+  </body>
+</html>
