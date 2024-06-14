@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+< lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자</title>
+  </head>
+  <style>
+    /* body > p:nth-of-type(2) {
+      color: rgb(255, 0, 8);
+    } */
+
+    /* div :not(p) {
+      color: blueviolet;
+    }
+    공백여부에 따라서 div자체를보고
+     하면 body중에서 찾음*/
+
+    /*p:only-child{color: rgb(0, 202, 0);}*/
+
+    /*p:only-of-type {
+      color: blue;
+    }*/
+
+     p:nth-last-child(3) {
+      color: rgb(255, 145, 0);
+    }
+
+    p::selection {
+      background-color: rgb(255, 255, 0);
+    } */
+
+
+    /* Type 선택자 < class 선택자 < id 선택자 < inline style < !important
+    p {
+      color: blue;
+    }
+    p:nth-child(2) {
+      color: aquamarine;
+    }
+    .first {
+      color: blueviolet;
+    }
+    #one {
+      color: rgb(255, 166, 33);
+    } */
+  </style>
+  <body>
+    <h1>제목태그</h1>
+    <p class="fist" id="one">문단태그</p>
+    <h2>제목태그</h2>
+    <p>문단태그</p>
+    <p>문단태그</p>
+    <p>문단태그</p>
+
+    <!--<div>
+      <p>문단태그</p>
+    </div>
+
+    <div>
+      <p>문단태그</p>
+      <span>인라인태그</span>
+    </div>
+    -->
+  </body>
+</html>
