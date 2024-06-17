@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<div lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent{
+        width: 1200px;
+        background-color: rgb(169, 169, 169);
+        margin: 20px auto;}
+
+      .parent>div{height: 100px;width: 300px;}
+      .top{overflow: hidden;}
+      .top>div{float: left;}
+
+      .parent>div:nth-child(1){background-color: rgb(0, 247, 218);}
+      .parent>div:nth-child(2){background-color: rgb(102, 94, 255);}
+      .parent>div:nth-child(3){background-color: rgb(181, 213, 251); }
+
+   
+
+     .center{position:relative;height:100px;}
+     .center>div{position:absolute;}
+     .center>div:nth-child(1){left: 0;}
+     .center>div:nth-child(2){left: 200px;}
+     .center>div:nth-child(3){left: 400px;}
+
+    .bottom{font-size: 0;}
+    .bottom>div{display: inline-block 16px; vertical-align: top;}
+
+    </style>
+  </head>
+
+<body>
+  <div>
+    <div class="parent top">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+    <div class="parent center">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+    <div class="parent bottom">
+    <div></div>
+    <div></div>
+    <div></div>
+   
+  </div>
+  </body>
+</html>
