@@ -27,8 +27,16 @@
         width: 800px;
         margin: 0 auto;
       }
+      .dir .directory
+      ul{list-style: none;}
+
+      .dir .directory
+      ul li{float: left; margin: 20px;
+        text-transform: uppercase;}
+
       .dir .directory {
         margin-left: 200px;
+        font-size: 9px;
       }
 
       .con > div {
@@ -43,9 +51,30 @@
         z-index: 1px;
       }
 
-      .con > .sid .nav {
-        position: relative;
-        left: ;
+      .con > .side .number p:first-child {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background-color: #fddfe1;
+        color: #e7b2ba;
+        font-size: 50px;
+        text-align: center;
+        line-height: 100px;
+        margin: 0 auto;
+        font-weight: bold;
+      }
+      .con .side .number{border-left:1px solid; color: #CCC;}
+      .con .side .number p:last-child {
+        width: 90%;
+        height: 20px;
+        background-color: #fddee1;
+        color: #e3a6ac;
+        font-size: 12px;
+        line-height: 20px;,
+        text-transform: uppercase;
+        padding-left:10px;
+        margin:10px 0 0 5px ;
+
       }
     </style>
   </head>
@@ -57,11 +86,15 @@
 
       <div class="dir">
         <div class="food01">
-          <img src="images/food_img/food_01.gif" alt="directory" />
+          <img src="images/food_img/food_01.gif" alt="food01" />
         </div>
 
         <div class="directory">
-          <img src="images/food_img/directory.gif" alt="directory" />
+          <ul><li>august / 2003 /
+            <li>summer</li>
+            <li>special</li>
+            <li>e．magazine</li>
+          </li></ul>
         </div>
 
         <div class="food02">
@@ -80,7 +113,8 @@
 
         <div class="side">
           <div class="number">
-            <img src="./images/food_img/number.gif" alt="number" />
+            <p>09</p>
+            <p>food&diet</p>
           </div>
           <div class="nav">
             <img src="./images/food_img/navigation.gif" alt="nav" />
