@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .clearfix::before,
+      .clearfix::after {
+        content: "";
+        display: block;
+      }
+      .clearfix::after {
+        clear: both;
+      }
+      /*실무에서는 overflow: hidden 보다 clearfix를 더 자주 활용함*/
+
+      div,
+      span {
+        width: 50px;
+        border: 1px solid;
+        display: inline-block;
+        margin: 50px auto;
+        float: right;
+      }
+
+      span section {
+        width: 50px;
+        margin: 50px auto;
+        border: 1px solid;
+        clear: both;
+      }
+      /*다른요소가끌어올려지는경우*/
+    </style>
+  </head>
+  <body>
+    <article class="clearfix">
+      <div>블록요소111111111111111</div>
+      <div>블록요소</div>
+      <div>블록요소</div>
+      <div>블록요소</div>
+      <span>인라인요소</span>
+      <span>인라인요소</span>
+      <span>인라인요소</span>
+      <span>인라인요소</span>
+      <span>인라인요소</span>
+    </article>
+    <section>블록요소</section>
+  </body>
+</html>

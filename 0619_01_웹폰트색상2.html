@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹폰트색상</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        width: 300px;
+        border: 1px solid;
+        margin: 20px;
+      }
+      p:nth-child(1) {
+        white-space: normal;
+      }
+      p:nth-child(2) {
+        white-space: nowrap;
+      }
+      p:nth-child(3) {
+        white-space: pre;
+      }
+      p:nth-child(4) {
+        white-space: pre-wrap;
+      }
+      p:nth-child(5) {
+        white-space: pre-line;
+      }
+
+      div{width: 300px;border: 1px solid; white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}
+    </style>
+  </head>
+
+  <body>
+    <p>
+      What is Lorem Ipsu m? Lorem Ips um is simply dummy text of the printing
+      and typesetting indus try.
+    </p>
+    <p>
+      What is Lorem Ipsum? Lorem I psum is simply d ummy text of the printing
+      and typesetting industry.
+    </p>
+    <p>
+      What is Lorem Ipsu m? Lorem Ipsum is simply dummy text of the printing and
+      typesetting ind ustry.
+    </p>
+    <p>
+      W hat is Lore m Ipsum? Lorem Ips um is simply dummy text of the printing
+      and typesetting indust ry.
+    </p>
+    <p>
+      Lorem Ips um is simply dum m y text of the printing and typesetting
+      industry.
+
+      <div>What is Lorem Ipsu m? Lorem Ipsum is simply dummy text of the printing and
+        typesetting ind ustry.</div>
+    </p>
+
+    <!--head시작-->
+    <header></header>
+    <div class="head"></div>
+    <!--head끝-->
+
+    <!--manu시작-->
+    <main></main>
+    <div class="manu"></div>
+    <!--maun끝-->
+
+    <div class="foot"></div>
+<footer></footer>
+  </body>
+</html>
