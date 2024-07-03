@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>보더_이미지</title>
+    <style>
+                                    p{height: 100px;}
+                                    p:first-child {
+                                      background-image: linear-gradient(180deg, red, yellow);
+                                    }
+                                    p:nth-child(2) {
+
+                                background-image: linear-gradient(red, yellow, green);
+                              }
+
+                                    p:nth-child(3) {
+                          background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+                        }
+                                    p:nth-child(4) {
+                    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                  }
+                                    p:nth-child(5)  {
+              background-image: conic-gradient(red, yellow, green);
+            }
+                                    p:nth-child(6) {
+        background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+        border-radius: 50%;
+      }
+                                    p:nth-child(7) {
+                                      border: 5px solid
+                                      #ccc;
+                                    }
+
+                                    p:nth-child(11) {
+                                      border: 5px inset #ccc ;
+
+                                    p:nth-child(12) {
+                                      border: 5px outset #ccc;
+    </style>
+  </head>
+  <body>
+    <p>round</p>
+    <p>stretch</p>
+    <p>none</p>
+    <p>hidden</p>
+    <p>dotted</p>
+    <p>dashed</p>
+    <p>solid</p>
+    <p>double</p>
+    <p>groove</p>
+    <p>ridge</p>
+    <p>inset</p>
+    <p>outset</p>
+    <p>initial</p>
+    <p>inherit</p>
+  </body>
+</html>

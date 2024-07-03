@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>보더_이미지</title>
+    <style>
+      p:first-child {
+        border: 10px solid transparent;
+        border-image: url(./images/border.png) 30 round;
+      }
+      p:nth-child(2) {
+        border: 10px solid transparent;
+        border-image: url(./images/border.png) 30 stretch;
+      }
+      p:nth-child(3) {
+        border-width: 2px solid transparent;
+        border-style: none;
+        border-color: #ccc;
+      }
+      p:nth-child(4) {
+        border-width: 2px solid transparent;
+        border-style: hidden;
+        border-color: #ccc;
+      }
+      p:nth-child(5) {
+        border-width: 2px solid transparent;
+        border-style: dashed;
+        border-color: #ccc;
+      }
+      p:nth-child(6) {
+        border-width: 5px solid transparent;
+        border-style: dashed;
+        border-color: #ccc;
+      }
+      p:nth-child(7) {
+        border-width: 5px solid transparent;
+        border-style: solid;
+        border-color: #ccc;
+      }
+      p:nth-child(8) {
+        border-width: 5px solid transparent;
+        border-style: double;
+        border-color: #ccc;
+      }
+      p:nth-child(9) {
+        border-width: 5px solid transparent;
+        border-style: groove;
+        border-color: #ccc;
+      }
+      p:nth-child(10) {
+        border-width: 5px solid transparent;
+        border-style: ridge;
+        border-color: #ccc;
+      }
+      p:nth-child(11) {
+        border-width: 5px solid transparent;
+        border-style: inset;
+        border-color: #ccc;
+      }
+      p:nth-child(12) {
+        border: 5px outset #ccc;
+      }
+      p:nth-child(13) {
+        border-width: 5px solid transparent;
+        border-style: initial;
+        border-color: #ccc;
+      }
+      p:nth-child(14) {
+        border: 5px inherit #ccc;
+        border-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <p>round</p>
+    <p>stretch</p>
+    <p>none</p>
+    <p>hidden</p>
+    <p>dotted</p>
+    <p>dashed</p>
+    <p>solid</p>
+    <p>double</p>
+    <p>groove</p>
+    <p>ridge</p>
+    <p>inset</p>
+    <p>outset</p>
+    <p>initial</p>
+    <p>inherit</p>
+  </body>
+</html>
