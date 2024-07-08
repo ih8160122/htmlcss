@@ -33,42 +33,48 @@
         float: left;
         width: 200px;
         height: 40px;
+        transform: translateY(50px);
         background-image: url(./images/logo.svg);
         background-repeat: no-repeat;
       }
       #wrap .menu > ul > li {
         float: left;
+        text-align: center;
         width: 25%;
       }
       #wrap .menu {
         font-family: "PretendardVariable";
         float: left;
-        position: relative;
       }
       #wrap .menu > ul > li > a {
         display: block;
+
         line-height: 50px;
         text-align: center;
         background-color: #fff;
       }
-      #wrap .menu > ul .sub {
-        background-color: #fff;
-        height: 0;
-        overflow: hidden;
-        transition: 0.8s;
-        position: absolute;
-        left: 0;
-        top: 52px;
-        width: 100%;
-      }
-      #wrap .menu > ul:hover .sub{height: 160px;}
+
       #wrap .menu > ul {
         width: 800px;
-        height: 0px;
+        height: 50px;
         margin-left: 50px;
         margin-top: 20px;
       }
-      #wrap .menu > ul .sub li a{color: #ccc;}
+      #wrap .menu > ul .sub li a {
+        color: rgb(156, 156, 156);
+      }
+      #wrap .menu > ul .sub {
+        overflow: hidden;
+        transition: 0.5s;
+        height: 0;
+        background: #fff;
+        z-index: 1;
+      }
+      #wrap .menu > ul:hover .sub {
+        height: 100px;
+        padding: 10px 0;
+        background-color: #fff;
+      }
     </style>
   </head>
 
@@ -109,32 +115,28 @@
                 </ul>
               </li>
 
-            
-
               <li>
                 <a href="#">ARTICLES </a>
               </li>
 
-                <li>
-                  <a href="#">SUPPORT</a>
-                  <ul class="sub">
-                    <li>
-                      <a href="#">HOW TO USE</a>
-                    </li>
-                    <li>
-                      <a href="#">FAQ</a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        GET IN TOUCH</a>
-                    </li>
-                   
-                  </ul>
-                </li>
+              <li>
+                <a href="#">SUPPORT</a>
+                <ul class="sub">
+                  <li>
+                    <a href="#">HOW TO USE</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#"> GET IN TOUCH</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
         </div>
+        <div><img src="./images/maindata125374_0.jpg" alt="" /></div>
       </header>
     </div>
   </body>
