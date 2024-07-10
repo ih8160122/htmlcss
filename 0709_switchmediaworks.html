@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스위치미디어</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        width: 1440px;
+        margin: 0 auto;
+        padding: 100px 0;
+      }
+      .wrap .left {
+        float: left;
+        font-size: 100px;
+      }
+
+      .wrap .right {
+        float: right;
+      }
+      .wrap .right .menu ul li {
+        list-style: none;
+      }
+      .wrap .right .menu ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 24px;
+        border-bottom: 1px solid;
+      }
+      .wrap .right .menu ul li .sub a {
+        font-size: 15px;
+      }
+      .wrap .right .menu ul li .sub {
+        height: 0;
+        transition: 0.5s;
+      }
+
+      .wrap .right .menu ul li:hover .sub {
+        height: 90px;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="left">
+        <div class="logo">Our Services.</div>
+      </div>
+
+      <div class="right">
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">UX/UI</a>
+              <ul class="sub">
+                <li><a href="#">Concept Proposal</a></li>
+                <li><a href="#"> UX Planning</a></li>
+                <li><a href="#">UI Design</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">motion</a>
+              <ul class="sub">
+                <li><a href="#">Concept Proposal</a></li>
+                <li><a href="#"> UX Planning</a></li>
+                <li><a href="#">UI Design</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">production</a>
+              <ul class="sub">
+                <li><a href="#">Concept Proposal</a></li>
+                <li><a href="#"> UX Planning</a></li>
+                <li><a href="#">UI Design</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
