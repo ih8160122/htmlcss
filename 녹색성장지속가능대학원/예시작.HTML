@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="KO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대학원</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #wrap {
+        width: 1862px;
+        margin: 0 auto;
+        display: grid;
+        grid-column: 864px 432px;
+        grid-row: 400px;
+        gap: 10px;
+      }
+      #wrap .sec01 p {
+        width: 864px;
+        height: 400px;
+      }
+
+      #wrap .sec01 {
+        position: relative;
+        top: 50px;
+        left: 0;
+      }
+      #wrap > div img {
+        object-fit: cover;
+        border-radius: 15px;
+      }
+      #wrap .sec01 {
+        grid-column: 1/2;
+        grid-row: 1;
+      }
+      #wrap .sec02 {
+        grid-column: 2/2;
+        grid-row: 1;
+      }
+      #wrap .sec03 {
+        grid-column: 3/4;
+        grid-row: 1/4;
+      }
+      #wrap .sec04 {
+        grid-column: 1/4;
+        grid-row: 2/4;
+      }
+      #wrap .sec05 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+      }
+      #wrap .sec06 {
+        grid-column: 4/2;
+        grid-row: 3/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="sec01">
+        <h1>PROGRAM</h1>
+        <p>
+          KAIST GGGS에서는 녹색성장과 지속가능성 문제해결을 위해 <br />
+          탄소중립기후기술 및 정책·금융에 대한 통섭적인 이해를 갖춘 국가
+          핵심인재를 양성합니다.
+        </p>
+      </div>
+
+      <div class="sec02">
+        <img src="./images/sec03_tab01.png" alt="" />
+      </div>
+
+      <div class="sec03">
+        <img src="./images/sec03_tab02.png" alt="" />
+      </div>
+
+      <div class="sec04">
+        <img src="./images/sec03_tab03.png" alt="" />
+      </div>
+      <div class="sec05">
+        <img src="./images/sec03_tab04.png" alt="" />
+      </div>
+      <div class="sec06">
+        <img src="./images/sec03_thumb.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

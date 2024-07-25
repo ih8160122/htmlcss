@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메뉴만들기</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .news {
+        display: flex;
+        width: 750px;
+        height: 568px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .news a .item {
+        width: 174px;
+        height: 406px;
+        overflow: hidden;
+        border-radius: 20px;
+        transition: 0.5s;
+        position: relative;
+      }
+      .news a .item img {
+        border-radius: 20px;
+      }
+      .news a:hover .item {
+        width: 742px;
+        height: 100%;
+      }
+      .news a .item h1 {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        color: #fff;
+        font-size: 20px;
+      }
+      .news a .item:hover h1 {
+        opacity: 0;
+      }
+      .news a .item .txt {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        text-align: center;
+        color: #fff;
+        font-size: 23px;
+
+        opacity: 0;
+      }
+      .news a .item:hover .txt {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="news">
+      <a href="#">
+        <ul class="item">
+          <img src="./images/new_esg_img1.jpg" alt="" />
+          <h1>지속 가능한 삶</h1>
+          <div class="txt">
+            <li>lg 생활 건강이 만드는</li>
+            <li>지속 가능한 삶</li>
+          </div>
+        </ul></a
+      >
+
+      <a href="#">
+        <ul class="item">
+          <img src="./images/new_esg_img2.jpg" alt="" />
+          <h1>우리의 약속</h1>
+          <div class="txt">
+            <li>lg 생활 건강이 만드는</li>
+            <li>지속 가능한 삶</li>
+          </div>
+        </ul></a
+      >
+
+      <a href="#">
+        <ul class="item">
+          <img src="./images/new_esg_img3.jpg" alt="" />
+          <h1>지키는 열정</h1>
+          <div class="txt">
+            <li>lg 생활 건강이 만드는</li>
+            <li>지속 가능한 삶</li>
+          </div>
+        </ul></a
+      >
+
+      <a href="#">
+        <ul class="item">
+          <img src="./images/new_esg_img4.jpg" alt="" />
+          <h1>나눔과 포옹</h1>
+          <div class="txt">
+            <li>lg 생활 건강이 만드는</li>
+            <li>지속 가능한 삶</li>
+          </div>
+        </ul></a
+      >
+    </div>
+  </body>
+</html>
