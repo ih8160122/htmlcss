@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>예습</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: "NotoSansKR";
+        src: url(./webfonts/NotoSansKR-Regular.woff) format(woff);
+      }
+      .inner {
+        width: 100%;
+        height: 600px;
+        align-items: center;
+        max-width: 1280px;
+        display: flex;
+
+        margin: 80px auto;
+        background: #f2efe8;
+      }
+
+      .inner .txt {
+        padding: 60px;
+      }
+      .inner .txt p {
+        font-family: "NotoSansKR";
+        line-height: 20px;
+      }
+      .inner .txt p:first-child {
+        margin-bottom: 25px;
+        font-weight: bold;
+      }
+      .inner .txt p:nth-child(2) {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 25px;
+      }
+      .inner .txt p:last-child {
+        margin: 70px 0;
+        border: 1px solid;
+        width: 136px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-weight: bold;
+      }
+
+      .inner div img {
+        width: 682px;
+        height: 586px;
+      }
+
+      @media screen and (max-width 1109px) {
+        .inner {
+          padding-top: 72px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inner">
+      <div class="txt">
+        <p>엘르보이스</p>
+        <p>
+          여성의 삶, <br />
+          레퍼런스가 필요할 때
+        </p>
+        <p>
+          작가, 북튜버, 아나운서, 기자 싱어송라이터까지! <br />
+          동시대를 살아가는 여성들의 에세이 뉴스레터를 구독해보세요.
+        </p>
+        <p>바로가기→</p>
+      </div>
+      <div><img src="./images/theme-service_ellevoice.png" alt="" /></div>
+    </div>
+  </body>
+</html>

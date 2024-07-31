@@ -2,7 +2,12 @@
   "folders": [
     {
       "path": ".."
+    },
+    {
+      "path": "../../../Downloads/startbootstrap-creative-gh-pages/부트스트랩"
     }
   ],
-  "settings": {}
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "htmlcss"
+  }
 }

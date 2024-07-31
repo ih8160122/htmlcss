@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헤더</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(44, 44, 44);
+      }
+      .wrap {
+        width: 1930px;
+        margin: 0 auto;
+      }
+      .wrap header {
+        width: 100%;
+        height: 97px;
+
+        background: #e5e5e5;
+      }
+      .wrap .banner {
+        width: 100%;
+        height: 560px;
+        background-image: url(./images/HP-BANNER_MAGNOLIA-EDP-100ML-3000x1286.jpg);
+        background-size: 100%;
+        background-position: 100%;
+        background-repeat: no-repeat;
+      }
+
+      header .announcement-bar {
+        width: 1930px;
+        height: 34px;
+        background: #000;
+      }
+      header .announcement-bar p {
+        color: #fff;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+      }
+      header .menu-header {
+        width: 100%;
+        height: 63px;
+      }
+      header .menu-header .logo {
+        float: left;
+      }
+      header .menu-header .logo img {
+        width: 150px;
+        height: 35px;
+        margin-left: 80px;
+      }
+
+      header .menu-header > ul > li {
+        float: left;
+        width: 15%;
+
+        text-align: center;
+      }
+
+      header .menu-header > ul > li .sub {
+        position: absolute;
+        transition: 0.5s;
+        left: 430px;
+        height: 493px;
+        width: 800px;
+        line-height: 30px;
+        z-index: 1;
+        display: flex;
+        opacity: 0;
+        gap: 20px;
+      }
+
+      header .menu-header > ul > li > a {
+        width: 100%;
+        height: 100%;
+        font-size: 13px;
+      }
+
+      header .menu-header > ul > li .sub > li {
+        width: 100%;
+      }
+      header .menu-header > ul > li .sub > li > ul {
+        margin-right: 150px;
+      }
+      header .menu-header > ul > li:hover .sub {
+        opacity: 1;
+      }
+      .bg {
+        position: absolute;
+        left: 0;
+        top: 64px;
+        width: 100%;
+        height: 0px;
+        background: #e5e5e5;
+        transition: 0.5s;
+      }
+      header .menu-header > ul:hover ~ .bg {
+        width: 1930px;
+        height: 493px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="announcement-bar">
+          <p>Free shipping for EU orders above 100€</p>
+        </div>
+        <div class="menu-header">
+          <div class="logo"><img src="./images/SMN_logo_web.png" alt="" /></div>
+          <ul>
+            <li>
+              <a href="#">Fragrances</a>
+              <ul class="sub">
+                <li>
+                  <ul>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">View All</a></li>
+                    <li><a href="">Eau de Parfum</a></li>
+                    <li><a href="">Eau de Cologne</a></li>
+                    <li><a href="">Aromatic Waters</a></li>
+                    <li><a href="">Discovery Kit</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="">Olfactory Family</a></li>
+                    <li><a href=""> Citrus </a></li>
+                    <li><a href=""> Floral </a></li>
+                    <li><a href=""> Oriental </a></li>
+                    <li><a href=""> Aromatic </a></li>
+                    <li><a href=""> Woody </a></li>
+                    <li><a href=""> Musky </a></li>
+                  </ul>
+                </li>
+                <li>
+                  <img
+                    src="./images/GELSOMINO-EDP_MENU-HEADER-800x998_1-1.jpg"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/L_IRIS-EDP_MENU-HEADER-800x998_1-2.jpg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Skincare</a>
+              <ul class="sub">
+                <li>
+                  <ul>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">View All</a></li>
+                    <li><a href="">Eau de Parfum</a></li>
+                    <li><a href="">Eau de Cologne</a></li>
+                    <li><a href="">Aromatic Waters</a></li>
+                    <li><a href="">Discovery Kit</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="">Olfactory Family</a></li>
+                    <li><a href="">View All</a></li>
+                    <li><a href="">Eau de Parfum</a></li>
+                    <li><a href="">Eau de Cologne</a></li>
+                    <li><a href="">Aromatic Waters</a></li>
+                    <li><a href="">Discovery Kit</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <img
+                    src="./images/Acqua-di-Rose-Toner_menu-header_2-1.jpg"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/Acqua-di-Rose-Crema_menu-header_2-2.jpg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Skincare</a>
+              <ul class="sub">
+                <li>
+                  <ul>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">View All</a></li>
+                    <li><a href="">Eau de Parfum</a></li>
+                    <li><a href="">Eau de Cologne</a></li>
+                    <li><a href="">Aromatic Waters</a></li>
+                    <li><a href="">Discovery Kit</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="">Olfactory Family</a></li>
+                    <li><a href="">View All</a></li>
+                    <li><a href="">Eau de Parfum</a></li>
+                    <li><a href="">Eau de Cologne</a></li>
+                    <li><a href="">Aromatic Waters</a></li>
+                    <li><a href="">Discovery Kit</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <img
+                    src="./images/Acqua-di-Rose-Toner_menu-header_2-1.jpg"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/Acqua-di-Rose-Crema_menu-header_2-2.jpg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Skincare</a>
+              <ul class="sub">
+                <li>
+                  <ul>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">View All</a></li>
+                    <li><a href="">Eau de Parfum</a></li>
+                    <li><a href="">Eau de Cologne</a></li>
+                    <li><a href="">Aromatic Waters</a></li>
+                    <li><a href="">Discovery Kit</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="">Olfactory Family</a></li>
+                    <li><a href="">View All</a></li>
+                    <li><a href="">Eau de Parfum</a></li>
+                    <li><a href="">Eau de Cologne</a></li>
+                    <li><a href="">Aromatic Waters</a></li>
+                    <li><a href="">Discovery Kit</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <img
+                    src="./images/Acqua-di-Rose-Toner_menu-header_2-1.jpg"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./images/Acqua-di-Rose-Crema_menu-header_2-2.jpg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="bg"></div>
+        </div>
+      </header>
+      <div class="banner"></div>
+    </div>
+
+    <main>
+      <div class="container-list">
+        <div class="txt">
+          <h1>Giardini Medicei</h1>
+          <p>
+            The warm colours of the Tuscan summer shine throughout the small
+            towns, where you can still breathe the air of history and age-old
+            traditions. The scent of citrus mingles with that of geranium,
+            lavender, and jasmine. And magnolia, as in our bewitching Magnolia
+            Eau de Parfum.
+          </p>
+        </div>
+        <div class="img-list">
+          <p><img src="./images/MAGNOLIA_EDP_100ML.png" alt="" /></p>
+          <p>
+            <img src="./images/BAGNOSCHIUMA_MAGNOLIA_250ML_PET.jpg" alt="" />
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
