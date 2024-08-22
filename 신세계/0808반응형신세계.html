@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      @font-face {
+        font-family: "NotoSans";
+        src: url(./webfonts/NotoSans-Light.woff) format(woff);
+      }
+
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .wrap {
+        width: 95%;
+
+        max-width: 940px;
+
+        margin: 50px auto;
+      }
+      .wrap > p:first-child {
+        text-align: center;
+        font-size: 25px;
+        padding: 86px 0 0;
+      }
+      .wrap .sb_figure {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4%;
+      }
+      .wrap .sb_figure li {
+        flex: 1 1 48%;
+      }
+      .wrap .sb_figure li img {
+        width: 100%;
+        object-fit: cover;
+      }
+      /* 이미지 크기를 안 주면 기존 크기를 반영하기 때문에 정해줘야한다 */
+      .wrap .sb_figure li .txt {
+        font-family: "NotoSans";
+        line-height: 30px;
+        font-size: 14px;
+        position: relative;
+        right: -10px;
+      }
+
+      .wrap .sb_figure li .txt p:first-child {
+        padding-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(68, 68, 68);
+      }
+      .wrap .sb_figure li .txt p:nth-child(2) {
+        padding-bottom: 20px;
+      }
+      .wrap .sb_figure li .txt p:nth-child(3) {
+        background: #ccc;
+        width: 131px;
+        height: 29px;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .wrap .sb_figure li .txt::after {
+        content: "";
+        height: 100px;
+        width: 2px;
+        background: #ccc;
+        position: absolute;
+        left: -10px;
+        top: 20px;
+      }
+      @media screen and (max-width: 960px) {
+        br {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 640px) {
+        .wrap .sb_figure {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <p>친환경 활동 실천</p>
+      <ul class="sb_figure">
+        <li>
+          <p>
+            <img
+              src="https://www.shinsegaefood.com/images/background/bg_evf_img_01.png"
+              alt="bg1"
+            />
+          </p>
+          <div class="txt">
+            <p>음성공장 태양열발전</p>
+            <p>
+              음성공장 상부 유휴부지를 활용하여 신재생에너지를 생산하여 <br />
+              가스(LNG)를 대체하여 사용하고 있습니다.
+            </p>
+            <p><a href="#">태양열에너지 사용현황</a></p>
+          </div>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.shinsegaefood.com/images/background/bg_evf_img_02.png"
+              alt="bg2"
+            />
+          </p>
+          <div class="txt">
+            <p>친환경패키징 확대</p>
+            <p>
+              식품제조 시 사용되는 용기를 탄소중립형 포장재, 대체 플라스틱
+              <br />
+              적용을 확대하고 있습니다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.shinsegaefood.com/images/background/bg_evf_img_03.png"
+              alt="bg3"
+            />
+          </p>
+          <div class="txt">
+            <p>대안육제품 개발</p>
+            <p>
+              제품 제조 시 원료육 대신 식물성 원료를 사용하여 가축사육 시 <br />
+              발생되는 메탄가스 및 물과 사료의 사용량을 줄여 지속가능한 <br />
+              지구환경에 이바지 하고자 합니다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.shinsegaefood.com/images/background/bg_evf_img_05.png"
+              alt="bg4"
+            />
+          </p>
+          <div class="txt">
+            <p>(협력회사)친환경 경영 독려</p>
+            <p>
+              2021년부터 (물류 등)협력회사 입찰평가 시 ESG경영 우수 실천 <br />
+              협력사 대상 가점 부여를 통해 ESG 영향력 전파에 앞장서고 있습니다.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

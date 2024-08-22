@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section p {
+        width: 100px;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+        font-style: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+      }
+      section.bg {
+        background: rgb(84, 84, 84);
+      }
+      section p.on {
+        background: rgba(255, 255, 255, 0.5);
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p><a href="#">클릭</a></p>
+    </section>
+    <script>
+      let btn = document.querySelector("section>p");
+      let sec = document.querySelector("section");
+
+      // btn.onclick = function (e)
+      btn.addEventListener("click", function (e) {
+        e.preventDefault(); // a태그쓸때 #으로 넘어가지 않게 변수를 만들어줌
+
+        // console.log("실행됨");
+        // document.querySelector("section").style.background = "rgba(0,0,0,0.8)";
+        sec.classList.toggle("bg");
+        // document.querySelector("section>p").style.background =("rgba(255,255,255,0.5)");
+        // 위에 방식도 가능하지만 보통은 아래 형식도 가능
+        // this.style.background = "rgba(255,255,255,0.5)";
+        // this.style.color = "blue";
+
+        // 클래스 만들어서 하면 더 간편하게 작업 가능
+        this.classList.toggle("on");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>허스트중앙헤더</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      body {
+        background: #000;
+      }
+      header {
+        height: 72px;
+      }
+      header .head {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /*<안될경우높이확인 */
+        padding: 0 40px;
+        box-sizing: border-box; /*<여백까지포함시킬때쓰는거 */
+        height: 100%;
+        position: relative;
+      }
+      header .head .gnb ul li {
+        padding: 0 34px;
+      }
+      header .head ul {
+        position: fixed;
+        display: flex;
+      }
+      header .head .menu {
+        display: none;
+      }
+
+      @media screen and (max-width: 900px) {
+        header .head .gnb {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: none;
+        }
+        header .head .login {
+          display: none;
+        }
+        header .head .menu {
+          display: block;
+        }
+      }
+      section {
+        height: 100vh;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="logo"><a href="#">로고</a></div>
+        <div class="gnb">
+          <ul>
+            <li><a href="#">서비스소개</a></li>
+            <li><a href="#">멤버십</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">마이페이지</a></li>
+          </ul>
+        </div>
+        <div class="login">
+          <ul>
+            <li><a href="#">signup</a></li>
+            <li><a href="#">login</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <p>
+            <img
+              src="https://www.hjmembers.co.kr/resources/images/main/ico-menu-mo.png"
+              alt="메뉴"
+            />
+          </p>
+        </div>
+      </div>
+    </header>
+    <section></section>
+  </body>
+</html>
