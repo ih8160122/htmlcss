@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write('<h1 class="title">제목태그</h1>');
+      // "",''는 중복해서 사용할 수 없어서 ""나 '' 사용하면 다른 곳은 '' 해야된다 위에 참고
+      /*window 생략 가능 alert("경고창입니다팝업창이랑은다름");
+          let test = window.confirm("자바스크립트가 재밋나요");*/
+      // let test라는 변수 안에 데이터를 저장함
+      //삼항연산 조건 ? 참인값 : 거짓인값 조건 자체가 참 아니면 거짓으로 판단 자바연습1참고
+      //  document.write(test ? "좋아한다" : "안좋아함"); //조건문
+      /* br 넣어야 하는 경우 에는 () 우선 정해주기
+      ocument.write((test ? "좋아한다" : "안좋아함")+<br>); 조건문*/
+      let gender = window.prompt("당신의 성별은?");
+      document.write("당신이 입력한 성별은" + gender + "입니다.<br>");
+      //+빠지면 오류가 생긴다
+      let sum = prompt("당신의 총점은?");
+      document.write("당신이 입력한 총점은" + sum + "점입니다.<br>");
+      let kor = Number(prompt("점수입력"));
+      let eng = Number(prompt("점수입력"));
+      document.write("총점은" + (kor + eng) + "점입니다.");
+    </script>
+  </body>
+</html>

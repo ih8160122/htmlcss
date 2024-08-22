@@ -34,9 +34,9 @@
 
         position: relative;
       }
-      #wrap header:hover {
-        background-color: #fff;
-      }
+      /* #wrap header:hover {
+           background-color: #fff;
+         } */
       #wrap header .top {
         width: 1480px;
         margin: 0 auto;
@@ -57,9 +57,9 @@
         top: 50%;
         transform: translateY(-50%);
       }
-      #wrap header:hover .logo a {
-        background-position: 0 -47px;
-      }
+      /* #wrap header:hover .logo a {
+           background-position: 0 -47px;
+         } */
       #wrap .menu {
         float: right;
         font-family: "NotoSans";
@@ -106,9 +106,13 @@
         z-index: 1;
       }
 
-      #wrap .menu > ul:hover .sub {
-        height: 310px;
-        padding: 10px 0;
+      /* #wrap .menu > ul:hover .sub {
+           height: 310px;
+           padding: 10px 0;
+         } */
+      #wrap .menu > ul .sub.on {
+        height: 320px;
+        padding: 20px 0;
       }
 
       #wrap .menu > ul .sub li {
@@ -132,10 +136,15 @@
         transition: 0.4s;
         border-top: transparent;
       }
-      #wrap .menu > ul:hover ~ .bg {
-        height: 310px;
-        background-color: rgb(255, 255, 255);
-        border-top: #ccc;
+      /* #wrap .menu > ul:hover ~ .bg {
+           height: 310px;
+           background-color: rgb(255, 255, 255);
+           border-top: #ccc;
+         } */
+      #wrap .menu .bg.on {
+        height: 320px;
+        border-color: #ccc;
+        background-color: #fff;
       }
     </style>
   </head>
@@ -199,5 +208,34 @@
         </div>
       </header>
     </div>
+    <script>
+      let gnb = document.querySelectorAll("#wrap .menu > ul > li");
+      let sub = document.querySelectorAll("#wrap .menu > ul .sub");
+
+      gnb.forEach(function (value, key) {
+        value.onmouseenter = function () {
+          document.querySelector("#wrap header").style.backgroundColor = "#fff";
+          document.querySelector(
+            "#wrap header .logo a"
+          ).style.backgroundPosition = "0 -47px";
+          sub.forEach(function (value, key) {
+            value.classList.add("on");
+          });
+          document.querySelector("#wrap .menu .bg").classList.add("on");
+        };
+
+        value.onmouseleave = function () {
+          document.querySelector("#wrap header").style.backgroundColor =
+            "transparent";
+          document.querySelector(
+            "#wrap header .logo a"
+          ).style.backgroundPosition = "0 0";
+          sub.forEach(function (value, key) {
+            value.classList.remove("on");
+          });
+          document.querySelector("#wrap .menu .bg").classList.remove("on");
+        };
+      });
+    </script>
   </body>
 </html>
