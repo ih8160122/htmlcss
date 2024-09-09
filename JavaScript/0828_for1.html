@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+let text="";
+let text1="";
+cars = ["소나타","아반떼","그랜저","벤츠","볼보","제네시스"]
+
+    text += cars[0] + "<br>";//text = text + "소나타"="<br>";
+text += cars[1] + "<br>";//text = text + "소나타"="<br>";
+text += cars[2] + "<br>";//text = 소나타 + "아반떼"="<br>";
+text += cars[3] + "<br>";
+text += cars[4] + "<br>";
+text += cars[5] + "<br>";
+
+//document.write(`${text}<br>`);
+// undefined 뜨는이유:변수만 선언하고 데이터 지정 안 해서 같이 지정해야됨
+// let text =undefined 뜸, let text=""; 지정해서 안 뜸
+for(let i=0; i<=5;++i){ //i=i+1 ++1 i+=1<더하기먼저하라는뜻
+  text1 += cars[i]+"<br>"; 
+
+}
+document.write(`${text1}<br>`);
+
+let txt =""
+for(let i = 1; i<=5;i++){
+//document.write(`The number is ${i}<br>`);
+txt +=`The number is ${i}<br>`;
+}
+document.write( `${txt}<br>`);
+for(let i=1;i<=100;i++ ){document.write(`${i},`);}
+
+
+document.write("<br>")
+for(let i=100;i>=1;i-- ){document.write(`${i},`);
+}
+
+document.write("<br>")
+for(let i = 1;i <= 100;i++ ){
+  if(i % 2== 0){
+  document.write(`${i},`);}
+}
+
+document.write("<br>")
+for(let i=2; i<=100; i+=2 ){
+
+  document.write(`${i},`);}
+
+  document.write("<br>")
+  let sum =0;//1,2,3,4
+  for(let i=1; i<=100 ;i++ ){
+// document.write(`${i},`);
+sum += i; //sum = sum + i
+}
+document.write(`${sum}<br>`)
+</script>
+</body>
+</html>

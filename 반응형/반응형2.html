@@ -1,38 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .Cookie {
-        width: 1310px;
-        height: 50px;
-        color: #fff;
-        background: rgb(0, 0, 0);
-      }
-      @media screen and (max-width: 1310px) {
-        .Cookie {
-          width: 1310px;
-          height: 50px;
-        }
-      }
-      @media screen and (max-width: 1310px) {
-        body {
-          width: 1310px;
-          height: 50px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="Cookie">
-      <p>
-        해당 사이트는 쿠키를 사용하며, 이는 귀하에게 유용한 정보를 파악 하고,
-        최적화된 정보를 제공하는 마케팅에 활용될 수 있습니다. 이 사이트를 계속
-        사용함으로써 쿠키 활용에 동의하게 됩니다
-      </p>
-    </div>
-  </body>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		ul{list-style: none;}
+		a{text-decoration: none;color: #333;}
+		.cnb{width: 95%;max-width: 940px;margin: 0 auto;}
+		.cnb>p{font-size: 34px;letter-spacing: -2px;margin: 60px 0;}
+		.cnb ul{display: flex;justify-content: space-between;flex-wrap: wrap;height: 424px;}
+		.cnb ul li{width: 311px; height: 100%;background-position: center;display: flex;justify-content: center;align-items: center;position: relative;text-align: center;}
+		.cnb ul li p{color: #fff;position: relative;z-index: 1;}
+		.cnb ul li p:first-child{font-size: 30px;font-weight: bold;}
+		.cnb ul li:hover p:first-child{color: #f29b76;}
+		.cnb ul li p:last-child{font-size: 15px;margin-top: 20px;}
+		.cnb ul li a::after{content:"";width: 100%;height: 100%;background: rgba(0,0,0,0.6);position: absolute;left: 0;top: 0;}
+		.cnb ul li:hover a::after{background: rgba(0,0,0,0.7);}
+		.cnb ul li:first-child{background-image: url(https://www.shinsegaefood.com/images/management/bg_info_1.jpg);}
+		.cnb ul li:nth-child(2){background-image: url(https://www.shinsegaefood.com/images/management/bg_info_2.jpg);}
+		.cnb ul li:nth-child(3){background-image: url(https://www.shinsegaefood.com/images/management/bg_info_3.jpg);}
+
+		.cnb .notice{background: rgb(199, 111, 83);margin-top: 20px;text-align: center;padding: 50px 0;color: #fff;position: relative;}
+		.cnb .notice::before{content: "";width: 79px;height: 44px;position: absolute;left: 30%;top: 50%;transform: translateY(-50%);background: url(https://www.shinsegaefood.com/images/management/ico_management_sprits.png);}
+		.cnb .notice::after{content: "";width: 32px;height: 32px;position: absolute;right: 30%;top: 50%;transform: translateY(-50%);background: url(https://www.shinsegaefood.com/images/management/ico_management_sprits.png) right top;}
+
+		@media screen and (max-width: 960px) {
+			.cnb ul{height: 369px;}
+			.cnb ul li{width: 100%;height: 120px;background-size: cover;}
+			.cnb .notice::before{left: 20px;}
+			.cnb .notice::after{right: 20px;}
+			br{display: none;}
+		}
+	</style>
+</head>
+<body>
+	<div class="cnb">
+		<p>명확한 비전과 전략으로 최고의 투자 가치를 실현하는 신세계푸드</p>
+		<ul>
+			<li>
+				<a href="#">
+					<p>경영정보</p>
+					<p>주주 및 이사회 구성을<br>안내해 드립니다.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p>재무정보</p>
+					<p>주주 및 이사회 구성을<br>안내해 드립니다.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p>주식정보</p>
+					<p>주주 및 이사회 구성을<br>안내해 드립니다.</p>
+				</a>
+			</li>
+		</ul>
+		<div class="notice">
+			<p>공시 및 공고</p>
+			<p>결산 공고 및 주주총회 결과를<br>안내해 드립니다.</p>
+		</div>
+	</div>
+</body>
+</html><!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		ul{list-style: none;}
+		a{text-decoration: none;color: #333;}
+		.cnb{width: 95%;max-width: 940px;margin: 0 auto;}
+		.cnb>p{font-size: 34px;letter-spacing: -2px;margin: 60px 0;}
+		.cnb ul{display: flex;justify-content: space-between;flex-wrap: wrap;height: 424px;}
+		.cnb ul li{width: 311px; height: 100%;background-position: center;display: flex;justify-content: center;align-items: center;position: relative;text-align: center;}
+		.cnb ul li p{color: #fff;position: relative;z-index: 1;}
+		.cnb ul li p:first-child{font-size: 30px;font-weight: bold;}
+		.cnb ul li:hover p:first-child{color: #f29b76;}
+		.cnb ul li p:last-child{font-size: 15px;margin-top: 20px;}
+		.cnb ul li a::after{content:"";width: 100%;height: 100%;background: rgba(0,0,0,0.6);position: absolute;left: 0;top: 0;}
+		.cnb ul li:hover a::after{background: rgba(0,0,0,0.7);}
+		.cnb ul li:first-child{background-image: url(https://www.shinsegaefood.com/images/management/bg_info_1.jpg);}
+		.cnb ul li:nth-child(2){background-image: url(https://www.shinsegaefood.com/images/management/bg_info_2.jpg);}
+		.cnb ul li:nth-child(3){background-image: url(https://www.shinsegaefood.com/images/management/bg_info_3.jpg);}
+
+		.cnb .notice{background: rgb(199, 111, 83);margin-top: 20px;text-align: center;padding: 50px 0;color: #fff;position: relative;}
+		.cnb .notice::before{content: "";width: 79px;height: 44px;position: absolute;left: 30%;top: 50%;transform: translateY(-50%);background: url(https://www.shinsegaefood.com/images/management/ico_management_sprits.png);}
+		.cnb .notice::after{content: "";width: 32px;height: 32px;position: absolute;right: 30%;top: 50%;transform: translateY(-50%);background: url(https://www.shinsegaefood.com/images/management/ico_management_sprits.png) right top;}
+
+		@media screen and (max-width: 960px) {
+			.cnb ul{height: 369px;}
+			.cnb ul li{width: 100%;height: 120px;background-size: cover;}
+			.cnb .notice::before{left: 20px;}
+			.cnb .notice::after{right: 20px;}
+			br{display: none;}
+		}
+	</style>
+</head>
+<body>
+	<div class="cnb">
+		<p>명확한 비전과 전략으로 최고의 투자 가치를 실현하는 신세계푸드</p>
+		<ul>
+			<li>
+				<a href="#">
+					<p>경영정보</p>
+					<p>주주 및 이사회 구성을<br>안내해 드립니다.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p>재무정보</p>
+					<p>주주 및 이사회 구성을<br>안내해 드립니다.</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<p>주식정보</p>
+					<p>주주 및 이사회 구성을<br>안내해 드립니다.</p>
+				</a>
+			</li>
+		</ul>
+		<div class="notice">
+			<p>공시 및 공고</p>
+			<p>결산 공고 및 주주총회 결과를<br>안내해 드립니다.</p>
+		</div>
+	</div>
+</body>
 </html>
