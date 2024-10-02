@@ -63,10 +63,13 @@
       }
       .menu .ul1d {
         display: flex;
-        gap: 50px;
+        justify-content: space-between;
         font-size: 16px;
       }
-
+      .menu .ul1d > ul {
+        display: flex;
+        gap: 30px;
+      }
       .menu .ul1d a {
         color: #fff;
         text-decoration: none;
@@ -254,13 +257,22 @@
       }
 
       .technology .tit img {
-        width: 520px;
+        width: 550px;
       }
-
+      footer {
+        width: 1730px;
+        margin: 0 auto;
+      }
       footer .ft_txt {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        gap: 30px;
+        justify-content: flex-end;
+      }
+      footer .ft_txt li {
+        font-size: 10px;
+      }
+      footer .ft_txt li a {
+        font-size: 10px;
       }
     </style>
   </head>
@@ -271,24 +283,26 @@
 
       <div class="inner">
         <div class="menu">
-          <ul class="ul1d">
+          <div class="ul1d">
             <p class="logo">
               <a href="#"><img src="images/gnb_logo_(1).png" alt="logo" /></a>
             </p>
-            <li><a href="#">PRODUCTS</a></li>
-            <ul class="ul2d">
-              <li><a href="#">전체보기</a></li>
-              <li><a href="#">전체보기</a></li>
-              <li><a href="#">전체보기</a></li>
-              <li><a href="#">전체보기</a></li>
+            <ul>
+              <li><a href="#">PRODUCTS</a></li>
+              <ul class="ul2d">
+                <li><a href="#">전체보기</a></li>
+                <li><a href="#">전체보기</a></li>
+                <li><a href="#">전체보기</a></li>
+                <li><a href="#">전체보기</a></li>
+              </ul>
+              <li><a href="#">PENELLAGEN®</a></li>
+              <li><a href="#">CLINICALLY TESTED</a></li>
+              <li><a href="#">BRAND STORY</a></li>
+              <li>
+                <a href="#"><img src="images/삼선메뉴2.png" alt="" /></a>
+              </li>
             </ul>
-            <li><a href="#">PENELLAGEN®</a></li>
-            <li><a href="#">CLINICALLY TESTED</a></li>
-            <li><a href="#">BRAND STORY</a></li>
-            <li>
-              <a href="#"><img src="images/삼선메뉴2.png" alt="" /></a>
-            </li>
-          </ul>
+          </div>
           <div class="topBanner">
             <div class="topBnr_tit">
               <h2>
@@ -457,8 +471,8 @@
               대표이사 : 양승찬 <br />
               사업자 등록번호 : 853-87-00953 <br />
               통신판매업신고 : 제2021-서울구로-2322호<br />
-              (주) 스타스테크 서울특별시 구로구 디지털로 30길 28 마리오타워
-              1203호 스타스테크<br />
+              (주) 스타스테크 서울특별시 구로구 디지털로 <br />
+              30길 28 마리오타워 1203호 스타스테크<br />
               FAX : +82-70-4334-8255
             </p>
           </li>
