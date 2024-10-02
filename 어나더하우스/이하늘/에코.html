@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    .slide{
+      
+      margin: 50px auto;
+   position: relative;
+    }
+
+    .slide .swiper-wrapper{
+      width: 95%;}
+
+    .slide .swiper-wrapper ul{
+      display: flex;justify-content: space-between;
+    gap: 30px;}
+
+.slide .swiper-wrapper .txt_box{
+  padding-left: 40px;
+  position: absolute; 
+  bottom: 80px;
+  left: 0;
+  color: #fff;}
+
+.slide .swiper-wrapper .txt_box p:first-child{
+  font-size: 40px;
+  font-weight: bold;}
+
+.slide .swiper-wrapper .txt_box p:nth-child(2){
+  font-size: 25px;}
+ 
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="swiper-wrapper">
+<ul>
+<li><img src="images/sec03_img01.jpg" alt=""></li>
+<li><img src="images/sec03_img02.jpg" alt=""></li>
+<li><img src="images/sec03_img03.jpg" alt=""></li>
+</ul>
+<div class="txt_box">
+  <p>자동차</p>
+  <p>탄소저감과 지속가능성을 고려하여 혁신적인 자동차 소재를 개발하는데 주력하고 있습니다.</p>
+</div>
+
+<div class="control_box">
+  <span class="next"><img src="images/solution_prev (1).svg" alt="prev"></span>
+  <span>1</span>
+  <span>/</span>
+  <span>3</span>
+  <span class="prev"><img src="images/solution_next.svg" alt="next"></span>
+</div>
+  </div>
+</div> 
+
+<script>
+
+</script>
+</body>
+</html>
