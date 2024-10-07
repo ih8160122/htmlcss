@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: Marcellus;
+        src: url(webfonts/Marcellus-Regular.woff) format(woff);
+      }
+      @font-face {
+        font-family: Pretendard;
+        src: url(webfonts/Pretendard-Regular.woff) format(woff);
+      }
+
+      ul {
+        list-style: none;
+      }
+      a {
+        font-family: Marcellus;
+        text-decoration: underline;
+        color: #000;
+        font-size: 20px;
+        font-weight: normal;
+      }
+      header {
+        max-width: 1900px;
+        width: 100%;
+        height: 900px;
+        position: relative;
+      }
+      header p {
+        position: relative;
+      }
+      header p img {
+        width: 100%;
+      }
+      .inner {
+        width: 1800px;
+        height: 20px;
+        padding: 40px;
+        margin-left: 30px;
+        position: absolute;
+        top: 20px;
+
+        left: 0;
+      }
+      .inner .logo {
+        width: 135px;
+        height: 20px;
+      }
+      .menu {
+        text-align: center;
+        font-family: Marcellus;
+        color: #fff;
+      }
+      .menu .ul1d {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+      }
+      .menu .ul1d > ul {
+        display: flex;
+        gap: 30px;
+      }
+      .menu .ul1d a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .menu .ul1d li a img {
+        width: 25px;
+      }
+      .menu .ul2d {
+        display: none;
+      }
+      .menu .pr:hover .ul2d {
+      }
+
+      .menu .topBanner {
+        margin-top: 250px;
+      }
+      .menu .topBanner h2 {
+        font-weight: normal;
+        font-size: 70px;
+      }
+      .menu .topBanner p {
+        font: 26px;
+        line-height: 50px;
+      }
+      .menu .topBanner p a {
+        color: #fff;
+      }
+
+      main {
+        width: 100%;
+        margin: 150px auto;
+      }
+
+      main ul {
+        font-family: Pretendard;
+        display: flex;
+        width: 1730px;
+        margin: 0 auto;
+        gap: 60px;
+        height: 900px;
+        align-items: center;
+      }
+      main ul img {
+        width: 680px;
+      }
+
+      main .con p:first-child {
+        font-size: 16px;
+        color: rgb(153, 153, 153);
+      }
+      main .con p:last-child {
+        color: #000;
+      }
+      main ul.con01 .con_txt {
+        font-weight: normal;
+        padding-left: 100px;
+      }
+      main div.sec02 {
+        position: relative;
+      }
+      main ul.con02 {
+        flex-direction: row-reverse;
+        width: 1730px;
+        margin: 0 auto;
+      }
+      main ul.con02 img {
+        width: 1050px;
+      }
+      main ul.con02 .bg {
+        z-index: -1;
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+        width: 100%;
+      }
+      main ul.con02 .bg img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      main .con_txt p:first-child {
+        line-height: 30px;
+      }
+      main .con_txt h3 {
+        font-weight: normal;
+        font-family: Marcellus;
+        font-size: 60px;
+      }
+
+      main .con_txt h2 {
+        font-weight: normal;
+        font-size: 28px;
+        padding: 20px 0;
+      }
+      main .con_txt p {
+        font-weight: normal;
+        margin: 20px 0;
+      }
+      main .con_txt a {
+        line-height: 100px;
+      }
+      .about {
+        padding-top: 200px;
+        position: relative;
+        font-weight: normal;
+        display: flex;
+        width: 1730px;
+        margin: 0 auto;
+        gap: 150px;
+        align-items: center;
+      }
+      .about .bg2 {
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        left: -100px;
+        bottom: -250px;
+      }
+      .about .img_wr {
+        display: flex;
+        gap: 30px;
+      }
+      .about .txt_wr {
+        font-family: Marcellus;
+
+        text-align: center;
+      }
+      .about .txt_wr p:first-child {
+        color: #ccc;
+      }
+      .about .txt_wr p {
+        font-family: Pretendard;
+      }
+      .about .txt_wr h3 {
+        font-weight: normal;
+        padding: 30px;
+        font-size: 60px;
+      }
+      .about .txt_wr a {
+        line-height: 70px;
+      }
+      .technology {
+        margin-top: 200px;
+      }
+
+      .technology .tit_txt {
+        font-family: Pretendard;
+        padding: 180px 100px 80px 80px;
+      }
+      .tech_tit .tit li img {
+        filter: grayscale();
+      }
+
+      .tech_tit .tit li:hover img {
+        filter: none;
+        transition: 0.8s;
+        border-radius: 40px;
+      }
+
+      .technology .tit_txt h3 {
+        font-family: Marcellus;
+        font-weight: normal;
+        font-size: 60px;
+        padding: 20px 0;
+      }
+      /* 타이틀 끝 */
+
+      .technology .tech_tit {
+        display: flex;
+        margin: 0 auto;
+        width: 1730px;
+        gap: 50px;
+      }
+      .technology .tech_tit .tit {
+        position: relative;
+      }
+      .technology .tit .tech_txt {
+        color: #fff;
+        font-family: Pretendard;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+      }
+      .technology .tit .tech_txt h2 {
+        font-size: 42px;
+        font-family: Marcellus;
+        font-weight: normal;
+      }
+      .technology .tit .tech_txt p {
+        position: relative;
+        left: 0;
+        bottom: -430px;
+        line-height: 22px;
+        font-family: Pretendard;
+      }
+
+      .technology .tit img {
+        width: 550px;
+      }
+      footer {
+        width: 1730px;
+        height: 134px;
+        margin: 0 auto;
+        display: flex;
+        padding-top: 150px;
+        align-items: center;
+
+        justify-content: space-between;
+      }
+      footer .copyright p {
+        line-height: 150px;
+        font-size: 12px;
+        color: rgb(186, 186, 186);
+      }
+
+      footer .ft_txt {
+        display: flex;
+        gap: 100px;
+        justify-content: flex-end;
+      }
+
+      footer .ft_txt li {
+        font-family: Marcellus;
+        font-size: 12px;
+      }
+      footer .ft_txt li a {
+        font-family: Marcellus, Pretendard;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <p><img src="images/top_banner (1).jpg" alt="" /></p>
+
+      <div class="inner">
+        <div class="menu">
+          <div class="ul1d">
+            <p class="logo">
+              <a href="#"><img src="images/gnb_logo_(1).png" alt="logo" /></a>
+            </p>
+            <ul>
+              <li class="pr"><a href="#">PRODUCTS</a></li>
+              <ul class="ul2d">
+                <li><a href="#">전체보기</a></li>
+                <li><a href="#">전체보기</a></li>
+                <li><a href="#">전체보기</a></li>
+                <li><a href="#">전체보기</a></li>
+              </ul>
+              <li><a href="#">PENELLAGEN®</a></li>
+              <li><a href="#">CLINICALLY TESTED</a></li>
+              <li><a href="#">BRAND STORY</a></li>
+              <li>
+                <a href="#"><img src="images/삼선메뉴2.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="topBanner">
+            <div class="topBnr_tit">
+              <h2>
+                REVIVE YOUR YOUTH <br />
+                AND BEAUTIFUL MOMENT
+              </h2>
+              <p>푸른 바다와 깊이 있는 연구가 만나 만드는 경이로운 가치</p>
+              <p><a href="#">View more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="info">
+        <div class="con">
+          <ul class="con01">
+            <li><img src="images/cate_pic1.jpg" alt="pic1" /></li>
+            <li>
+              <div class="con_txt">
+                <p>#불가사리 마스크 #재생 #회복</p>
+                <h3>
+                  Rerave PENELLAGEN® <br />
+                  Lifting Mask
+                </h3>
+                <h2>리라브 페넬라겐® 리프팅 마스크</h2>
+                <p>
+                  리라브가 제안 하는 트리플 락킹(Triple - Locking) <br />
+                  리프팅 에너지 마스크
+                </p>
+
+                <p><a href="#">View more</a></p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="sec02">
+            <ul class="con02">
+              <li>
+                <p><img src="images/prd_penellagen_cream.jpg" alt="pic1" /></p>
+                <p class="bg"><img src="images/prd_bg (1).png" alt="" /></p>
+              </li>
+              <li>
+                <div class="con_txt">
+                  <p>#페넬라겐® #재생 #회복</p>
+                  <h3>
+                    Rerave PENELLAGEN® <br />
+                    Cream
+                  </h3>
+                  <h2>리라브 페넬라겐® 크림</h2>
+                  <p>효과를 보증하는 에스테틱 관리 크림</p>
+
+                  <p><a href="#">View more</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="con01">
+            <li><img src="images/리라브 스타피쉬 마스크.jpg" alt="pic1" /></li>
+            <li>
+              <div class="con_txt">
+                <p>#불가사리 마스크 #보습 #탄력</p>
+                <h3>
+                  Rerave Starfish <br />
+                  Mask
+                </h3>
+
+                <h2>리라브 스타피쉬 마스크</h2>
+                <p>불가사리 추출물 함유 마스크팩</p>
+
+                <p><a href="#">View more</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <section class="about">
+      <p class="bg2"><img src="images/about_bg (1).jpg" alt="" /></p>
+      <div class="img_wr">
+        <p><img src="images/about rerave (1).jpg" alt="" /></p>
+        <p><img src="images/about rerave.jpg" alt="" /></p>
+      </div>
+      <div class="txt_wr">
+        <p>Brand Story</p>
+        <h3>About Rerave</h3>
+        <p>
+          리라브는 나를, 우리를 그리고 더 나아가 세상을 <br />
+          모두 건강하고 아름답게 하기 위한 고민에서 시작하였습니다.
+        </p>
+        <p><a href="#">View more</a></p>
+      </div>
+    </section>
+
+    <section class="technology">
+      <div class="tech">
+        <div class="tit_txt">
+          <h3>Rerave Technology</h3>
+          <p>
+            리라브는 나를, 우리를 그리고 더 나아가 세상을 <br />
+            모두 건강하고 아름답게 하기 위한 고민에서 시작하였습니다.
+          </p>
+        </div>
+        <!-- 타이틀 끝 -->
+
+        <div class="tech_tit">
+          <ul class="tit">
+            <li><img src="images/tech_penellagen.jpg" alt="" /></li>
+            <li class="tech_txt">
+              <h2>01. PENELLAGEN®</h2>
+              <p>
+                페넬라겐(Penellagen) 은 브랜드의 핵심 기술 <br />
+                요소인 피부 침투(Penetration)기술과 콜라겐 <br />
+                (collagen)의 합성어로서 자체 연구・개발한 <br />
+                기술력에 대한 자신감을 담고 있습니다.
+              </p>
+            </li>
+          </ul>
+
+          <ul class="tit">
+            <li><img src="images/tech_sheet.jpg" alt="" /></li>
+            <li class="tech_txt">
+              <h2>02. Triple Locking Sheet</h2>
+              <p>
+                확실하게 잠궈주고, 확실하게 올려주고, 확실하게<br />살려주는
+                트리플-락킹 (triple-locking) 시트. 뛰어난<br />
+                밀착력으로 유효성분 증발은 차단하고 피부는 편하게<br />
+                숨쉴수 있는 리라브 독점 시트입니다.
+              </p>
+            </li>
+          </ul>
+
+          <ul class="tit">
+            <li><img src="images/tech_ingredient.jpg" alt="" /></li>
+            <li class="tech_txt">
+              <h2>03. Ingredient</h2>
+              <p>
+                죽지않는 불가사리 재생의 원천 성분으로써 <br />
+                항산화성, 미백효과와 주름 억제능력이 매우 <br />
+                뛰어나고 독성과 피부자극이 없어 믿고 사용할 수 <br />
+                있는 안전한 성분입니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- 끝 -->
+    <footer>
+      <div class="copyright">
+        <h1><img src="images/ft_logo.svg" alt="" /></h1>
+        <p>Copyright © 2022 rerave. All Rights Reserved.</p>
+      </div>
+      <div class="ft_txt">
+        <ul>
+          <li>SITEMAP</li>
+          <li><a href="#">PRODUCT</a></li>
+          <li><a href="#">PRODUCT</a></li>
+          <li><a href="#">PRODUCT</a></li>
+        </ul>
+
+        <ul>
+          <li>INFO</li>
+          <li>
+            <p>
+              대표이사 : 양승찬 <br />
+              사업자 등록번호 : 853-87-00953 <br />
+              통신판매업신고 : 제2021-서울구로-2322호<br />
+              (주) 스타스테크 서울특별시 구로구 디지털로 <br />
+              30길 28 마리오타워 1203호 스타스테크<br />
+              FAX : +82-70-4334-8255
+            </p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>CS CENTER</li>
+          <li>
+            <p>
+              고객상담센터 1544-9166 <br />
+              평일 : 10:00~17:00 <br />
+              점심 : 12:00~13:00 <br />
+            </p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
