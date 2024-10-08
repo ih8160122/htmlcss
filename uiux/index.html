@@ -23,49 +23,108 @@
       }
       header {
         width: 100%;
-        max-width: 1900px;
+        height: 100vh;
+        background: url(images/bluesky.jpg);
+        background-size: cover;
       }
 
       header p img {
         width: 100%;
         position: relative;
       }
-      header .inner .ul1d {
-        position: absolute;
+      header .inner .menu {
+        display: flex;
         align-items: center;
-        justify-content: space-between;
-        top: 30px;
-        left: 40%;
-        height: 20px;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
       }
-      header .inner .ul1d p img {
-        padding-left: 40%;
-        width: 50px;
+
+      header .inner .menu p img {
+        position: relative;
+        left: 220px;
+        top: 0;
+        width: 55px;
         filter: brightness(60);
-        padding-bottom: 20px;
+        padding-bottom: 70px;
       }
       header .inner .ul1d ul {
+        padding-top: 20px;
         font-size: 20px;
         display: flex;
         gap: 50px;
       }
       header .inner .ul1d ul a {
         font-family: Cafe24Ssurround;
-        color: rgb(4, 5, 5);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        color: #fff;
+      }
+
+      header .pr_img {
+        width: 500px;
+        height: 500px;
+        background: #fff;
+        margin: 0 auto;
+        position: relative;
+        top: 100px;
+        border-radius: 500px;
+      }
+      header .topbanner .banner_img {
+        position: relative;
+        width: 150px;
+      }
+      header .topbanner .banner_txt {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      header .topbanner .banner_img .cloud01 {
+        position: relative;
+        right: -1300px;
+        top: -350px;
+      }
+      header .topbanner .banner_img .cloud01 span {
+        position: absolute;
+        left: 40px;
+        top: 75px;
+      }
+      header .topbanner .banner_img .cloud02 {
+        position: relative;
+        left: 400px;
+        top: -250px;
+      }
+      header .topbanner .banner_img .sunny01 {
+        position: relative;
+        left: 450px;
+        top: -700px;
+      }
+      main {
+        background: #b9ddff;
+        width: 100%;
+        height: 1050px;
+        margin: 0 auto;
+      }
+      main .mockup01 img {
+        width: 40%;
+        position: relative;
+        left: 30%;
+        top: 320px;
+        border: #fff solid 10px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
       }
     </style>
   </head>
   <body>
     <header>
-      <p><img src="images/blue sky and sea background.jpg" alt="" /></p>
       <div class="inner">
         <div class="menu">
+          <p class="logo">
+            <a href=""
+              ><img src="images/free-icon-plane-4677536.png" alt=""
+            /></a>
+          </p>
           <div class="ul1d">
-            <p class="logo">
-              <a href=""
-                ><img src="images/free-icon-plane-4677536.png" alt=""
-              /></a>
-            </p>
             <ul>
               <li><a href="#">홈</a></li>
               <li><a href="#">랜딩페이지</a></li>
@@ -74,16 +133,48 @@
             </ul>
           </div>
         </div>
-        <div class="topbanner">
+
+        <div class="pr_img">
           <p><img src="" alt="" /></p>
           <!--사진넣기 -->
-          <div class="banner_txt">
-            <p>나에대해</p>
-            <p>스킬</p>
-            <p>인적사항</p>
+        </div>
+
+        <div class="topbanner">
+          <div class="banner_img">
+            <div class="cloud01">
+              <p>
+                <img src="images/free-icon-cloud-3236851.png" alt="cloud1" />
+              </p>
+              <span><a href="#">나에대해</a> </span>
+            </div>
+            <div class="cloud02">
+              <p>
+                <img src="images/free-icon-cloud-1163624.png" alt="cloud2" />
+                <span><a href="#">스킬</a></span>
+              </p>
+            </div>
+            <div class="sunny01">
+              <p>
+                <a href="#"
+                  ><img src="images/free-icon-sunny-11742559.png" alt=""
+                /></a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </header>
+    <main>
+      <div class="main01">
+        <div class="mockup01">
+          <p><img src="images/리라브.png" alt="" /></p>
+        </div>
+      </div>
+      <div class="main02">
+        <div class="mockup02">
+          <p><img src="images/홍루이젠목업.png" alt="" /></p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
