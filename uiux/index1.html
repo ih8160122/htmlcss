@@ -92,10 +92,25 @@
         position: relative;
         display: flex;
         margin: 0 auto;
-        background-color: #ccc;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid #000;
+        box-shadow: 5px 5px 8px #ccc;
         width: 1000px;
         height: 600px;
       }
+      .section01 .about_icon img {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+      .section01 span {
+        font-size: 20px;
+        position: relative;
+        right: -360px;
+        top: 55px;
+        text-decoration: underline;
+      }
+
       .section01 .pr_main {
         position: absolute;
         left: 50px;
@@ -105,6 +120,18 @@
         background: #000;
       }
 
+      .pr_main .ul2d > li img {
+        width: 20px;
+        height: 20px;
+      }
+      .pr_main .ul3d > li img {
+        width: 20px;
+        height: 20px;
+      }
+      .pr_main .ul3d {
+        padding-bottom: 45px;
+      }
+
       .section01 .about .main_txt {
         width: 300px;
         justify-content: center;
@@ -112,53 +139,62 @@
         gap: 150px;
         display: flex;
         position: relative;
-        left: 300px;
-        top: 60px;
+        left: 330px;
+        top: 20px;
+        line-height: 50px;
       }
       main .pr_sub {
         display: flex;
-        gap: 50px;
+        gap: 70px;
       }
-      main .pr_sub li {
-        width: 170px;
-        height: 170px;
-        background: #6da2e8;
+      main .pr_sub .angle {
+        width: 20px;
+        border: none;
+      }
+      main .pr_sub .angle img {
+        margin-top: 50px;
+        width: 20px;
+        height: 20px;
+      }
+      main .pr_sub > li {
+        width: 120px;
+        height: 120px;
+        border: #000 1px solid;
         position: relative;
         bottom: -400px;
-        right: 290px;
+        right: -50px;
       }
 
-      section .sec01{
+      section .sec01 {
         width: 1700px;
-      height:1000px;
-      margin: 0 auto;}
-      section .sec01 p{
-        margin: 0 auto; 
-        width:1006px;
-        height: 804px;
-        background: #6da2e8;}
+        height: 1000px;
+        margin: 0 auto;
+      }
+      section .sec01 .inner02 {
+        display: flex;
+      }
+      section .sec01 p {
+        width: 1006px;
+        margin: 0 auto;
 
-      section .sec02{
-        width: 1700px;
-      height:1000px;
-      margin: 0 auto;}
+        box-shadow: 5px 5px 8px #ccc;
+      }
+      section .sec01 img {
+        display: flex;
 
-      section .sec02 p{
-        margin: 0 auto; 
-        width:1006px;
-        height: 804px;
-        background: #6da2e8;}
-
-      section .sec03{
-        width: 1700px;
-      height:1000px;
-      margin: 0 auto;}
-
-      section .sec03 p{
-        margin: 0 auto; 
-        width:1006px;
-        height: 804px;
-        background: #6da2e8;}
+        width: 1006px;
+      }
+      section .sec01 .sec_img01 {
+        gap: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section .sec01 .sec_icon01 img {
+        margin-top: 300px;
+        width: 40px;
+        height: 40px;
+      }
     </style>
   </head>
   <body>
@@ -166,12 +202,18 @@
       <div class="inner01">
         <div class="logo">
           <p>
-            <a href="#"><img src="images/cloud (1).png" alt="" /></a>
+            <a href="#"
+              ><img src="images/free-icon-cloud-1163573.png" alt="cloud"
+            /></a>
           </p>
         </div>
         <div class="menu">
           <p>
-            <a href="#"><img src="images/menu-burger.png" alt="" /></a>
+            <a href="#"
+              ><img
+                src="images/free-icon-font-menu-burger-3917215.png"
+                alt="menu"
+            /></a>
           </p>
 
           <div class="ul1d">
@@ -197,46 +239,98 @@
     <main>
       <div class="main_tit"><h1>-My portfolio</h1></div>
       <div class="section01">
-        <p>about me</p>
-
         <div class="about">
-          <div class="pr_main"><p></p></div>
-          <div class="main_txt">
-            <ul class="ul2d">
-              <li>이름</li>
-              <li>번호</li>
-              <li>메일</li>
-              <li>기타</li>
-            </ul>
-            <ul class="ul3d">
-              <li>Skill</li>
-              <li>이름</li>
-              <li>이름</li>
-              <li>이름</li>
-            </ul>
+          <span class="about_icon"
+            ><img src="images/free-icon-brightness-4203954.png" alt=""
+          /></span>
+          <span>about me</span>
+
+          <div class="pr_main">
+            <div class="main_txt">
+              <ul class="ul2d">
+                <li><img src="images/user.png" alt="user" /> 이름</li>
+                <li><img src="images/star.png" alt="star" /> 생년월일</li>
+                <li><img src="images/phone-call.png" alt="user" /> 번호</li>
+                <li><img src="images/envelope.png" alt="user" /> 메일</li>
+              </ul>
+              <ul class="ul3d">
+                <li>Skill</li>
+                <li><img src="images/user.png" alt="user" /> ps</li>
+                <li><img src="images/user.png" alt="user" /> html</li>
+                <li><img src="images/user.png" alt="user" /> css</li>
+                <li><img src="images/user.png" alt="user" /> ja</li>
+              </ul>
+            </div>
           </div>
+          <ul class="pr_sub">
+            <li class="angle">
+              <a href="#">
+                <img
+                  src="images/free-icon-font-angle-small-left-3916892.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>사진</li>
+            <li>사진</li>
+            <li>사진</li>
+            <li>사진</li>
+
+            <li class="angle">
+              <a href="#">
+                <img
+                  src="images/free-icon-font-angle-small-right-3916869.png"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="pr_sub">
-          <li>d</li>
-          <li>d</li>
-          <li>d</li>
-          <li>d</li>
-        </ul>
       </div>
     </main>
-    <section><div class="sec01">
-      <h3>웹</h3>
-      <p><a href="">사진</a></p>
-   </div> 
-    <section><div class="sec02">
-      <h3>웹</h3>
-      <p><a href="">사진</a></p>
-   </div> 
-    <section><div class="sec03">
-      <h3>웹</h3>
-      <p><a href="">사진</a></p>
-   </div> 
-
-  </section>
+    <section>
+      <div class="sec01">
+        <h3>웹</h3>
+        <div class="inner02">
+          <p class="sec_icon01">
+            <img
+              src="images/free-icon-font-angle-small-left-3916892.png"
+              alt=""
+            />
+          </p>
+          <div class="sec_img01">
+            <p>
+              <a href=""
+                ><img src="images/리라브목업1.png" alt="리라브목업1"
+              /></a>
+            </p>
+            <p>
+              <a href=""
+                ><img src="images/빙그레목업.png" alt="빙그레목업1"
+              /></a>
+            </p>
+            <p>
+              <a href=""
+                ><img src="images/홍루이젠.png" alt="홍루이젠목업1"
+              /></a>
+            </p>
+          </div>
+          <p class="sec_icon01">
+            <img
+              src="images/free-icon-font-angle-small-right-3916869.png"
+              alt=""
+            />
+          </p>
+        </div>
+      </div>
+      <div class="sec02">
+        <h3>포스터</h3>
+        <p><a href="">사진</a></p>
+      </div>
+      <div class="sec03">
+        <h3>기타</h3>
+        <p><a href="">사진</a></p>
+      </div>
+    </section>
   </body>
 </html>
