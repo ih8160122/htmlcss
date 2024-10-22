@@ -1,0 +1,25 @@
+@charset "utf-8";
+$main: rgb(77, 136, 255);
+$sub: rgb(255, 51, 0);
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    width: 200px;
+    a {
+      text: {
+        align: center;
+      }
+      &:hover {
+        color: $sub;
+      }
+      color: $main;
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }
+}

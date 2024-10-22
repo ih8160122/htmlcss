@@ -1,0 +1,19 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  width: 200px;
+}
+ul li a {
+  text-align: center;
+  color: rgb(77, 136, 255);
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: rgb(255, 51, 0);
+}/*# sourceMappingURL=style.css.map */
